@@ -18,7 +18,7 @@
 
 ## Download and Installation
 
-To begin using this template, choose one of the following options to get started:
+To begin using this template, choose one of the followin options to get started:
 * [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/freelancer/)
 * Install via npm: `npm i startbootstrap-freelancer`
 * Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git`
