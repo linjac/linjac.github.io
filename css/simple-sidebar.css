@@ -35,9 +35,10 @@ body {
   background-color: #f9faff;
 }
 
-a {
-  color:#1cabff; 
+a:hover{
+  color: #ff3265;
 }
+
 .scroll-element{
   overflow-y: scroll;
 /*  height: calc(100vh - 2rem);*/
@@ -57,9 +58,10 @@ a {
 }
 
 .dropdown-item{
+  color:#1cabff; 
   height: 1.4rem;
 }
-.dropdown-item:hover {
+.dropdown-item a:hover {
     color: #f9faff;
     background-color: rgba(255,50,101,0.9);
 }
@@ -157,10 +159,6 @@ a {
 /*  font-variant: small-caps;*/
   line-height: 1.5;
   padding-left: 0.5rem;
-}
-
-#bottom-bar a:hover{
-  color: #ff3265;
 }
 
 
