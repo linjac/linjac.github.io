@@ -15,7 +15,7 @@ for (i = 0; i < projects.length; i++) {
 				name: projects[i][0],
 				year: projects[i][1],
 				id: projects[i][2], 
-				pageURl: "./" + projects[i][0] + "/index.html", 
+				pageURl: "./" + projects[i][0] , 
 				symbURL: "../assets/stupid.png", 
 				imgURL: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"}
 	projectInfo.push(info)
