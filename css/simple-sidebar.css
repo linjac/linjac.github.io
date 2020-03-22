@@ -14,7 +14,7 @@
   --green: #28a745;
   --teal: #1cabff; (28,171,255)
   --cyan: #17a2b8;
-  --white: #f9faff; (249,250,255)
+  --white: #f9faff; (255,253,249)
   --gray: #342e36; (52,46,54)
   --gray-dark: #19171d; (25,23,29)
   --primary: #007bff;
@@ -25,14 +25,18 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-*/
+  --aero-blue/mint-green: #cdf2e6; (205,242,230)
+  --light-blue: #baecff; (186,236,255)
+  --white-yellowtinge: #fffdf9; (176,239,252)
 
+*/
 body {
   overflow-x: hidden;
   overflow-y: hidden;
   font-weight: 300;
 /*  font-family: 'Inter', sans-serif;*/
-  background-color: #f9faff;
+
+  background-color: #fffdf9; /*yellow-orange tinge*/
 }
 
 a:hover{
@@ -96,10 +100,10 @@ a:hover{
 
 .btn-secondary {
     color: #342e36 ;
-    background-color: rgba(249,250,255,0.60) ;
+    background-color: rgba(255,253,249,0.60) ;
     border-color: #342e36 ;
     backdrop-filter: blur(4px);
-    background: rgba(249,250,255,0.70);
+    background: rgba(255,253,249,0.70);
     border: 0.1rem solid #342e36;
     height: 1.4rem;
     width: 1.4rem;
@@ -116,7 +120,7 @@ a:hover{
 
 .btn-secondary:hover { /* works */
     color: #342e36;
-    background-color: rgba(200,201,205,0.60);
+    background-color: rgba(205,203,200,0.60);
     border-color: #342e36;
 }
 .btn-secondary:focus {
@@ -141,7 +145,7 @@ a:hover{
     text-align: left;
     list-style: none;
     backdrop-filter: blur(4px);
-    background: rgba(249,250,255,0.60);
+    background: rgba(255,253,249,0.60);
     background-clip: padding-box;
     border: 0.1rem solid rgba(52,46,54,.6);
     border-radius: 0;
@@ -158,13 +162,78 @@ a:hover{
   border-style: solid;
   border-width: 0.1rem;
   backdrop-filter: blur(4px);
-  background: rgba(249,250,255,0.60);
+  background: rgba(255,253,249,0.60);
   font-size: 0.8em;
 /*  font-weight: lighter;*/
 /*  font-variant: small-caps;*/
   line-height: 1.5;
   padding-left: 0.5rem;
 }
+
+.projects-page {
+  margin: 5rem 5rem;
+  width: fit-content;
+}
+
+.cute-icon{
+  padding:0 0.5rem;
+}
+
+.project-icon{
+/*  border-color: #342e36;
+  border-style: solid;
+  background: #baecff;
+  border-width: 0.1rem;*/
+  width: 22rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.project-icon:hover{
+  background-color: rgba(255,50,101,0.9);
+}
+
+.icon-item{
+  color: #19171d;
+}
+
+.icon-item:hover{
+  text-decoration: none;
+  color: #f9faff;
+}
+
+.icon-image{
+  width: inherit;
+}
+
+
+
+
+
+
+/* border reformatting */
+
+.border {
+  border: 1px solid #342e36 !important;
+}
+
+.border-top {
+  border-top: 1px solid #342e36 !important;
+}
+
+.border-right {
+  border-right: 1px solid #342e36 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #342e36 !important;
+}
+
+.border-left {
+  border-left: 1px solid #342e36 !important;
+}
+
 
 
 
