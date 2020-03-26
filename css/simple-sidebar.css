@@ -37,8 +37,12 @@ body {
 /*  font-family: 'Inter', sans-serif;*/
 
   background-color: #fffdf9; /*yellow-orange tinge*/
+  color: #19171d;
 }
 
+a {
+  color: #1cabff;
+}
 a:hover{
   color: #ff3265;
 }
@@ -66,12 +70,12 @@ a:hover{
   height: 1.4rem;
 }
 .dropdown-item:hover{
-    color: #f9faff;
+    color: #fffdf9;
     background-color: rgba(255,50,101,0.9);
 }
 
 .dropdown-item a:hover {
-    color: #f9faff;
+    color: #fffdf9;
     background-color: rgba(255,50,101,0.9);
 }
 
@@ -99,7 +103,7 @@ a:hover{
 }
 
 .btn-secondary {
-    color: #342e36 ;
+    color: #342e36;
     background-color: rgba(255,253,249,0.60) ;
     border-color: #342e36 ;
     backdrop-filter: blur(4px);
@@ -113,7 +117,7 @@ a:hover{
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
-    color: #f9faff;
+    color: #fffdf9;
     background-color: rgba(255,50,101) ;
     border-color: rgba(255,50,101) ;
 }
@@ -170,13 +174,11 @@ a:hover{
   padding-left: 0.5rem;
 }
 
+/* project page (example.html) ---------------------------- */
+
 .projects-page {
   margin: 5rem 5rem;
   width: fit-content;
-}
-
-.cute-icon{
-  padding:0 0.5rem;
 }
 
 .project-icon{
@@ -196,24 +198,65 @@ a:hover{
 
 .icon-item{
   color: #19171d;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 0.1s, 0.1s, 0.1s, 0.1s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s, 0s, 0s;
 }
 
 .icon-item:hover{
   text-decoration: none;
-  color: #f9faff;
+  color: #fffdf9;
 }
 
-.icon-image{
+.icon-thumbnail{
   width: inherit;
+  background-color: #fffdf9;
+  background-blend-mode: multiply;
+}
+
+
+.project-icon:hover .icon-thumbnail{
+  background-color: rgba(255,50,101);
+  mix-blend-mode: screen;
+  -webkit-filter: grayscale(100%) contrast(90%);
+  filter: grayscale(100%) contrast(90%);
+  opacity: 1;
+}
+
+/*.icon-thumbnail:hover{
+  background: rgba(255,50,101,0.9);
+  mix-blend-mode: screen;
+  -webkit-filter: grayscale(100%) contrast(50%);
+  filter: grayscale(100%) contrast(200%);
+  opacity: 1;
+}*/
+
+
+
+
+.icon-avatar{
+  padding:0 0.5rem;
+}
+
+
+/* project page (example.html) ----------------------------- */
+.project-page {
+  margin: 5%;
+  width: fit-content;
+}
+
+.cover-image{
+  width: inherit;
+  height: auto;
 }
 
 
 
 
 
-
+/* mod styling of bootstrap.css classes ---------------------- */
 /* border reformatting */
-
 .border {
   border: 1px solid #342e36 !important;
 }

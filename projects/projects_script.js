@@ -1,5 +1,5 @@
 var projects = [
-				["example",2020,"000"], 
+				["bordeaux-x-tanikawa",2018,"000"], 
 				["Volvo",2009,"001"], 
 				["Saab",2010,"002"], 
 				["Ford",2007,"003"], 
@@ -16,8 +16,8 @@ for (i = 0; i < projects.length; i++) {
 				year: projects[i][1],
 				id: projects[i][2], 
 				pageURl: "./" + projects[i][0] , 
-				symbURL: "../assets/stupid.png", 
-				imgURL: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"}
+				avatarURL: "../assets/stupid.png", 
+				thumbURL: "./" + projects[i][0] +"/thumbnail"}
 	projectInfo.push(info)
 
 }
@@ -30,12 +30,12 @@ for (i = 0; i < projectInfo.length; i++) {
 	iconContent += '<a class="icon-item" href="./';
 	iconContent += projectInfo[i].pageURl + '">';
 	iconContent += '<div class="row">';
-	iconContent += '<div class="col-12">';
-	iconContent += '<img class="icon-image" src= "' + projectInfo[i].imgURL + '">';
+	iconContent += '<div class="col-12" style="padding:0;">';
+	iconContent += '<img class="icon-thumbnail" src= "' + projectInfo[i].thumbURL + '">';
 	iconContent += '</div></div>'
 	iconContent += '<div class="row">'
-	iconContent += '<div class="col-2 border cute-icon">'
-	iconContent += '<img src= "' + projectInfo[i].symbURL + '">';
+	iconContent += '<div class="col-2 border icon-avatar">'
+	iconContent += '<img src= "' + projectInfo[i].avatarURL + '">';
 	iconContent += '</div>';
 	iconContent += '<div class="col-10 border-top border-right border-bottom">';
 	iconContent += projectInfo[i].name + ", " + projectInfo[i].year;
