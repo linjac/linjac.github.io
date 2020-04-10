@@ -211,8 +211,11 @@ a:hover{
 
 .icon-thumbnail{
   width: inherit;
+  height: 500px;
+  object-fit: cover;
   background-color: #fffdf9;
   background-blend-mode: multiply;
+
 }
 
 
@@ -224,36 +227,66 @@ a:hover{
   opacity: 1;
 }
 
-/*.icon-thumbnail:hover{
-  background: rgba(255,50,101,0.9);
+.project-icon:hover .icon-avatar {
   mix-blend-mode: screen;
-  -webkit-filter: grayscale(100%) contrast(50%);
+  -webkit-filter: grayscale(100%) contrast(200%);
   filter: grayscale(100%) contrast(200%);
   opacity: 1;
-}*/
+}
 
-
-
-
-.icon-avatar{
+.icon-avatar-col{
   padding:0 0.5rem;
 }
 
+.icon-avatar{
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+}
 
 /* project page (example.html) ----------------------------- */
+.project-title{
+  margin-top: 1rem;
+}
+
 .project-page {
   margin: 5%;
-  width: fit-content;
-}
-
-.cover-image{
+  margin-top: 1rem;
   width: inherit;
-  height: auto;
+}
+
+.project-info{
+  color: #bbb9bc;
+  font-size: 0.9em;
+}
+
+.project-description{
+  margin-left: 20vw;
+  margin-right: 10vw;
+}
+
+.project-photos{
+  object-fit: contain;
+  max-height: 100%;
+  width: inherit;
+}
+
+.cover-image-container{
+  width: 90vw;
+}
+.cover-image{
+/*  width: inherit;
+  height: 90vh;
+  overflow: hidden;*/
+  width: inherit;
+  max-height: calc(100vh - 3rem);
+  object-fit: cover;
 }
 
 
-
-
+#b-x-t-model-top{
+  max-width: -webkit-fill-available !important;
+}
 
 /* mod styling of bootstrap.css classes ---------------------- */
 /* border reformatting */

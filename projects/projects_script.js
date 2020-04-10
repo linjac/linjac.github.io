@@ -1,6 +1,6 @@
 var projects = [
 				["bordeaux-x-tanikawa",2018,"000"], 
-				["Volvo",2009,"001"], 
+				["spiky-boi",2020,"001"], 
 				["Saab",2010,"002"], 
 				["Ford",2007,"003"], 
 				["Fiat",2007,"004"], 
@@ -16,7 +16,7 @@ for (i = 0; i < projects.length; i++) {
 				year: projects[i][1],
 				id: projects[i][2], 
 				pageURl: "./" + projects[i][0] , 
-				avatarURL: "../assets/stupid.png", 
+				avatarURL: "../assets/" + projects[i][0] + ".png", 
 				thumbURL: "./" + projects[i][0] +"/thumbnail"}
 	projectInfo.push(info)
 
@@ -34,8 +34,8 @@ for (i = 0; i < projectInfo.length; i++) {
 	iconContent += '<img class="icon-thumbnail" src= "' + projectInfo[i].thumbURL + '">';
 	iconContent += '</div></div>'
 	iconContent += '<div class="row">'
-	iconContent += '<div class="col-2 border icon-avatar">'
-	iconContent += '<img src= "' + projectInfo[i].avatarURL + '">';
+	iconContent += '<div class="col-2 border icon-avatar-col">'
+	iconContent += '<img class="icon-avatar" src= "' + projectInfo[i].avatarURL + '">';
 	iconContent += '</div>';
 	iconContent += '<div class="col-10 border-top border-right border-bottom">';
 	iconContent += projectInfo[i].name + ", " + projectInfo[i].year;
