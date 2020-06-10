@@ -244,7 +244,7 @@ a:hover{
   height: inherit;
 }
 
-/* project page (example.html) ----------------------------- */
+/* each project page (index.html) ----------------------------- */
 .project-title{
   margin-top: 1rem;
 }
@@ -255,14 +255,24 @@ a:hover{
   width: inherit;
 }
 
+.project-summary-sentence{
+/*142, 132, 153*/
+/*  color: #8e8499;
+*/
+/*179, 175, 186*/
+  color: #b3afba;
+/**/
+}
+
 .project-info{
-  color: #bbb9bc;
-  font-size: 0.9em;
+/*  color: #bbb9bc;*/
+  color: #b3afba;
+  font-size: 0.8em;
 }
 
 .project-description{
-  margin-left: 20vw;
-  margin-right: 10vw;
+  margin-left: 15vw;
+  margin-right: 5vw;
 }
 
 .project-photos{
@@ -280,9 +290,24 @@ a:hover{
   overflow: hidden;*/
   width: inherit;
   max-height: calc(100vh - 3rem);
+  height: calc(100vh - 3rem);
   object-fit: cover;
 }
 
+.inline-image{
+/*  width: inherit;
+  height: 90vh;
+  overflow: hidden;*/
+  width: inherit;
+  max-height: calc(100vh - 3rem);
+  object-fit: cover;
+}
+
+figcaption{
+  font-style: italic;
+  font-size: 0.7em;
+  text-align: center;
+}
 
 #b-x-t-model-top{
   max-width: -webkit-fill-available !important;

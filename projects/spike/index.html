@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>projects | jackie lin</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../../css/simple-sidebar.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <div class="btn-group dropright" style="position:absolute; left:1rem; top:1rem;">
+      <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<!--         <p>></p> -->
+<!--         <span class="my-dropdown-icon"></span> -->
+      </button>               
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="../../">home</a>
+        <a class="dropdown-item" href="../">projects</a>
+        <a class="dropdown-item" href="../../about">about</a>
+      </div>
+    </div>
+
+
+    <div class="scroll-element">
+      <div class="project-page container-fluid">
+        <div class="cover-image-container">
+          <video class="cover-image" muted controls loop autoplay>
+            <source src="./spiky_boi_compile.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <h1 class="text font-weight-light project-title">spiky</h1>
+        <svg height="20" width="100">
+          <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(28,171,255);stroke-width:8" />
+        </svg>
+        <p class="project-info">
+          4.118 Creative Computation <br>
+          Instructor: Axel Kilian <br>
+          Spring 2020 <br>
+        </p>
+
+        <div class="project-description">
+          <h3>introduction</h3>
+          <p>
+          How can we make unfamiliar spaces more comfortable for people? The vast majority of architecture is immobile, blind, deaf, and mute. But what if it starts to sense things and move? Technological advances in motors, controls, sensing, computational power, and digital memory enable architecture to expand beyond its traditional limits. Architecture can begin to take an active role in shaping people’s conception of space. Space is no longer indifferent to the people who inhabit it. 
+          </p>
+          <p>The agenda of these objects was to bring joy and a sense of ownership to a person in an unfamiliar situation, through a sequence of human and object interactions. First, physical prototypes explored formal and material characteristics that would precipitate comfort, and then actuation using motors allowed the objects to respond physically to human input. Lastly, a computer simulation of a larger scale door that incorporated time and memory abilities was made based on lessons from the physical prototypes.
+          </p>
+        </div>
+
+        <img class="project-photos" id="b-x-t-model-top" src="./spiky_boi_right.png"/>
+        <div class="row">
+          <div class="col-4">
+            <img class="project-photos" id="b-x-t-model-front" src="./spiky_sensing_landscape.png"/>
+          </div>
+          <div class="col-4">
+            <img class="project-photos" id="b-x-t-model-back" src="./spiky_sensing_midrange.png"/>
+            <figcaption>caption</figcaption>
+          </div>
+          <div class="col-4">
+            <img class="project-photos" id="b-x-t-model-right" src="./spiky_sensing_closeup.png"/>
+            <figcaption>caption</figcaption>
+          </div>
+        </div>
+
+        <h3 class="project-description">grasshopper simulation</h3>
+        <div class="cover-image-container">
+
+        </div>
+        <div class="project-description">
+          <p>A computer simulation of a spiky door was created using the Kangaroo plugin for Grasshopper, which approximated the elastic properties of silicone rubber. The spiky door was oval and two meters tall. It was covered in spikes that were twenty centimeters long. In the simulation, the actuation force was a changing gravity load on the mesh in the y-direction.</p>
+          <p>The computer simulation approached the agenda of creating joy and comfort in an unfamiliar space differently than the physical prototypes. It aimed to incorporate more varied behavior and memory.</p>
+          <p>This resulted in a simulated elastic door that first thrashed menacingly at the person when they entered the activation zone but then rewarded the person for remaining within that zone by calming down and opening so they can pass. The key component here is that investment in time and risk taking can build trust once behavior patterns are understood.</p>
+          <div >
+          <video style="max-width: 100%" muted controls loop autoplay>
+            <source src="./door_animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>caption</figcaption>
+          </div>
+        </div>
+
+
+        <div class="project-description">
+          <p>The door had three states: (1) State 1 “neutral” where the door was closed and still; (2) State 2 “agitated” where the door would continuously lunge toward the person; (3) State 3 “open” where the door would open to let the person pass. (Figure 6).</p>
+        </div>
+    </div>
+  </div>
+
+  <div id="bottom-bar">
+    <a href="../">
+    > projects
+    </a>
+    <a href="./">
+    > spiky
+    </a>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

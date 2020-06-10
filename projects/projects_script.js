@@ -1,8 +1,8 @@
 var projects = [
 				["bordeaux-x-tanikawa",2018,"000"], 
-				["spiky-boi",2020,"001"], 
-				["Saab",2010,"002"], 
-				["Ford",2007,"003"], 
+				["spike",2020,"001"], 
+				["theater-prosthesis",2019,"002"], 
+				["fema-disaster-relief-housing",2018,"003"], 
 				["Fiat",2007,"004"], 
 				["Audi",2015,"005"]
 				];

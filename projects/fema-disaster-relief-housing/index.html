@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>projects | jackie lin</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../../css/simple-sidebar.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+  <!-- Dropright Menu -->
+  <div class="btn-group dropright" style="position:absolute; left:1rem; top:1rem;">
+    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    </button>               
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="../../">home</a>
+      <a class="dropdown-item" href="../">projects</a>
+      <a class="dropdown-item" href="../../about">about</a>
+    </div>
+  </div>
+  <!-- /Dropright Menu -->
+
+  <!-- Main scroll element -->
+  <div class="scroll-element">
+  <div class="project-page container-fluid">
+    <!-- Cover image -->
+    <div class="cover-image-container">
+      <iframe src="https://www.youtube.com/embed/Gn3KfGYd_N0?autoplay=1&mute=1"
+       class="cover-image" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- Project main info -->
+    <h1 class="text font-weight-semi-bold project-title">FEMA Disaster-Related Housing Design</h1>
+    <svg height="20" width="100">
+      <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(28,171,255);stroke-width:8" />
+    </svg>
+    <h4 class="project-summary-sentence"> Structural analysis of disaster-relief housing designs based on location-specific environmental loading requriements </h4>
+    <p class="project-info">
+      Undergraduate Researcher <br>
+      MIT Digital Structures Lab <br>
+      Supervisors: Courtney Stephen, Caitlin Mueller<br>
+      Fall 2017 - Fall 2018 <br>
+    </p>
+    <!-- /Project main info -->
+
+    <!-- Project description -->
+    <div class="project-description">
+      <p>
+        The Federal Emergency Management Agency (FEMA) tasked researchers to rethink disaster response housing. 
+      </p>
+      <p>
+        The research project clustered regions in the United States based on similarity in wind, snow, and seismic loading conditions. Loading maps for wind, snow, and seismic loads were overlayed in ArcGIS, which created an intersection of polygons. The polygons and their associated wind, snow, and seismic loading requriements, or "loading signature" were imported into MATLAB. The polygons were sorted by similarity in loading signatures using k-means clustering. A one-size-fits-all housing design would be overengineered for different parts of the country. Materials savings up to 60% could be saved if the regions of the US were clusterd into six different groups each with different loading requirements.
+      </p>
+        Using the Karamba3D strucutral analysis tool in Grasshopper beam and column elements of the deployable housing unit were sized parametrically for the maximum loading conditions of each cluster.
+      </p>
+    </div>
+    <!-- /Project Description -->
+
+    <!-- Photos -->
+    <div class="row">
+      <div class="col">
+      <img class="project-photos" src="./urban_risk_lab_continental.png"/>
+      <figcaption>Continental US Multi-Hazard Map credit: MIT Urban Risk Lab </figcaption>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <img class="project-photos" id="b-x-t-model-left" src="./urban_risk_lab_continental.png"/>
+        <figcaption>Continental US Multi-Hazard Map credit: MIT Urban Risk Lab </figcaption>
+      </div>
+      <div class="col-3">
+        <img class="project-photos" id="b-x-t-model-front" src="./FinalModels-front.jpg"/>
+      </div>
+      <div class="col-3">
+        <img class="project-photos" id="b-x-t-model-back" src="./FinalModels-back.jpg"/>
+      </div>
+      <div class="col-3">
+        <img class="project-photos" id="b-x-t-model-right" src="./FinalModels-right.jpg"/>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="bottom-bar">
+    <a href="../">
+    > projects
+    </a>
+    <a href="./">
+    > fema-disaster-relief-housing
+    </a>
+  </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--   Disable right click script -->
+<!--   <script type="text/javascript">
+    $(document).ready(function () {
+        $("body").on("contextmenu",function(e){
+            return false;
+        });
+    });
+  </script> -->
+
+
+</body>
+
+</html>
