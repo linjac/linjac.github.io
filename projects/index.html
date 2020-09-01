@@ -18,7 +18,6 @@
   <link href="../css/simple-sidebar.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -26,127 +25,29 @@
   <div id="page-content-wrapper">
 
     <!-- Dropdown button -->
-    <div class="btn-group dropright" style="position:absolute; left:1rem; top:1rem;">
-      <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<!--         <p>></p> -->
-<!--         <span class="my-dropdown-icon"></span> -->
-      </button>               
+    <div id="dropright-btn-div" class="btn-group dropright">
+      <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>               
       <div class="dropdown-menu">
         <a class="dropdown-item" href="../">home</a>
-        <a class="dropdown-item" href="./projects">projects</a>
+        <a class="dropdown-item" href="./">projects</a>
         <a class="dropdown-item" href="../about">about</a>
       </div>
     </div>
     <!-- /Dropdown button -->
 
-    <!-- Page content -->
+    <!-- Main content -->
     <div class="scroll-element">
-    <div class="projects-page container-fluid">
-      <h1 class="text font-weight-light">projects</h1>
-<!--       <a href="./example">
-        example
-      </a> -->
-      <svg height="10" width="100">
-        <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(28,171,255);stroke-width:8" />
-      </svg>
-      
-      <div id="populate-script">
-<!--         <div class="col-lg-6 col-xl-4">
-          <div class="container project-icon">
-            <a class="icon-item" href="./example">
-            <div class="row">
-              <div class="col-12">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. nim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-2 border cute-icon">
-                Ut e hgfd hgfd
-              </div>
-              <div class="col-10 border-top border-right border-bottom">
-              ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-          </a>
-          </div>
-        </div>
-        <div class="col-lg-6 col-xl-4">
-          <div class="container project-icon">
-            <div class="row">
-              <div class="col-12">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-2 border cute-icon">
-                Ut enim ad  
-              </div>
-              <div class="col-10 border-top border-right border-bottom">
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-xl-4">
-          <div class="container project-icon">
-            <div class="row">
-              <div class="col-12">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-2 border cute-icon">
-                Ut enim ad  
-              </div>
-              <div class="col-10 border-top border-right border-bottom">
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-xl-4">
-          <div class="container project-icon">
-            <div class="row">
-              <div class="col-12">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-2 border cute-icon">
-                Ut enim ad  
-              </div>
-              <div class="col-10 border-top border-right border-bottom">
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-xl-4">
-          <div class="container project-icon">
-            <div class="row">
-              <div class="col-12">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-2 border cute-icon">
-                Ut enim ad  
-              </div>
-              <div class="col-10 border-top border-right border-bottom">
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </div>
-          </div>
-        </div> -->
+      <div class="projects-page container-fluid">
+        <h1 class="text font-weight-light">projects</h1>
+        <svg height="10" width="100">
+          <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(28,171,255);stroke-width:8" />
+        </svg>      
+        <div id="populate-script"></div>
       </div>
-
-
     </div>
-    </div>
-    <!-- /Page content -->
+    <!-- /Main content -->
   </div>
   <!-- /#page-content-wrapper -->
-
   <!-- Bottom Bar -->
   <div id="bottom-bar">
     <a href="./">
@@ -155,13 +56,11 @@
   </div>
   <!-- /Bottom Bar -->
 
-
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Populate the projects page with projects script-->
   <script src="./projects_script.js"></script>
-
-
 
 </body>
 
