@@ -19,7 +19,7 @@
   "homepage": "https://github.com/linjac/linjac.github.io#readme",
   "dependencies": {
     "bootstrap": "^4.5.2",
-    "three": "^0.120.0"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "live-server": "^1.2.1"
